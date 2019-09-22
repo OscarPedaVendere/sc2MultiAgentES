@@ -1,0 +1,807 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"late",
+				"lastFrameWritten"
+			],
+			[
+				"lte",
+				"lastFrameWritten"
+			],
+			[
+				"logc4pl",
+				"LOG4CPLUS_INFO"
+			],
+			[
+				"classmeth",
+				"get_class_methods"
+			],
+			[
+				"conf",
+				"config_obj"
+			],
+			[
+				"prvio",
+				"previous_streams"
+			],
+			[
+				"previou",
+				"previous_streams"
+			],
+			[
+				"from",
+				"fromtimestamp"
+			],
+			[
+				"lock",
+				"lock_file"
+			],
+			[
+				"plates",
+				"plates_info"
+			],
+			[
+				"ver",
+				"Verdana"
+			],
+			[
+				"connec",
+				"connectionThreads"
+			],
+			[
+				"ms",
+				"msgQueue"
+			],
+			[
+				"array",
+				"array_splice"
+			],
+			[
+				"null",
+				"NULL"
+			],
+			[
+				"authori",
+				"authorizationstop"
+			],
+			[
+				"autho",
+				"authorizationstart"
+			],
+			[
+				"myid",
+				"MY_ID"
+			],
+			[
+				"sign",
+				"signalToParent"
+			],
+			[
+				"heigh",
+				"height"
+			],
+			[
+				"app",
+				"appojjopg"
+			],
+			[
+				"buffg",
+				"buffgray"
+			],
+			[
+				"orign",
+				"originalFrame"
+			],
+			[
+				"origi",
+				"originalFrame"
+			],
+			[
+				"lice",
+				"licensePresent"
+			],
+			[
+				"camera",
+				"cameraID"
+			],
+			[
+				"json",
+				"json_obj"
+			],
+			[
+				"debug",
+				"debug_profiling"
+			],
+			[
+				"DEBUG",
+				"DEBUG_PROFILING"
+			],
+			[
+				"Debug",
+				"DEBUG_PROFILING"
+			],
+			[
+				"currentfp",
+				"currentFPS"
+			],
+			[
+				"lastt",
+				"lastFPSTime"
+			],
+			[
+				"currentf",
+				"currentFPS"
+			],
+			[
+				"getinclu",
+				"get_included_files"
+			],
+			[
+				"gloab",
+				"global"
+			],
+			[
+				"html",
+				"html_dir"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/config/default.yaml",
+			"settings":
+			{
+				"buffer_size": 2125,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/config/algs/qmix_smac.yaml",
+			"settings":
+			{
+				"buffer_size": 458,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/config/algs/qmix.yaml",
+			"settings":
+			{
+				"buffer_size": 532,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/config/envs/sc2.yaml",
+			"settings":
+			{
+				"buffer_size": 765,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/config/algs/coma_smac.yaml",
+			"settings":
+			{
+				"buffer_size": 672,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/config/algs/vdn_smac.yaml",
+			"settings":
+			{
+				"buffer_size": 434,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Utente/Desktop/sample.py",
+		"/c/users/utente/appdata/local/temp/rsub-dv6d9s/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-spzv44/daemonMT.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-a9mfl4/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-6j_37n/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-is39m0/daemonST.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-ob5yux/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-fjsbgc/videobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-dv11ow/videbuffer.c",
+		"/c/users/utente/appdata/local/temp/rsub-mvscju/alprspawner.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-zcgw_5/daemon.cpp",
+		"/C/Users/Utente/Desktop/SC2Tesy/src/config/default.yaml",
+		"/C/Users/Utente/Desktop/SC2Tesy/src/config/algs/qmix.yaml",
+		"/C/Users/Utente/Desktop/SC2Tesy/src/config/algs/qmix_smac.yaml",
+		"/C/Users/Utente/Desktop/SC2Tesy/src/config/envs/sc2.yaml",
+		"/C/Users/Utente/Desktop/SC2Tesy/README.md",
+		"/C/cygwin64/home/Utente/.ssh/id_rsa.pub",
+		"/c/users/utente/appdata/local/temp/rsub-5uz_up/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-pz4mg6/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-c87in0/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-knhnbt/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-jj_wvg/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-475mpy/alpr_impl.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-5cx_h6/alpr_impl.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-se6clk/alpr.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-_b50sd/alpr_impl.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-dll2xv/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-wi_gmc/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-y1g319/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-mlid6r/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-y8p5ea/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-jr0mc3/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-19a2gf/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-0mfzk8/usbvideobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-41vrg8/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-fkeyrj/alpr.h",
+		"/c/users/utente/appdata/local/temp/rsub-7ck06a/videobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-q5fz1k/videobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-dfz5zh/videobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-pjvrkn/usbvideobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-etvond/videobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-wgbcuv/logging_videobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-o8iby6/videobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-9to7rh/videobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-f7d3w4/videobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-krwa_w/usbvideobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-ui0gz0/usbvideobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-947scl/videobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-7zjc3_/videobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-pvx6px/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-tn49mo/detectorcpu2.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-2s4xic/example.txt",
+		"/c/users/utente/appdata/local/temp/rsub-b4dz4c/messenger.",
+		"/c/users/utente/appdata/local/temp/rsub-g7ypwy/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-tbxh7h/alpr.h",
+		"/c/users/utente/appdata/local/temp/rsub-zmogfq/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-c44gtv/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-fuh_at/videobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-375r_s/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-scm2yn/timing.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-acy5ms/timing.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-dmq27l/videobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-uiqz63/videobuffer.h",
+		"/c/users/utente/appdata/local/temp/rsub-nglco6/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-xpz852/videobuffer.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-qgtqru/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-uku2iu/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-x3p8cc/__init__.py",
+		"/c/users/utente/appdata/local/temp/rsub-adi0yx/__init__.py",
+		"/c/users/utente/appdata/local/temp/rsub-nmjigj/sockserv.py",
+		"/c/users/utente/appdata/local/temp/rsub-__an26/sockserv.py",
+		"/c/users/utente/appdata/local/temp/rsub-ysi90z/__init__.py",
+		"/c/users/utente/appdata/local/temp/rsub-s7hhqz/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-vsd_ii/__init__.py",
+		"/c/users/utente/appdata/local/temp/rsub-u6xxl_/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-epmrmc/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-pothp4/sockserv.py",
+		"/c/users/utente/appdata/local/temp/rsub-0o4prp/__init__.py",
+		"/c/users/utente/appdata/local/temp/rsub-gm1gxa/mesenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-30r_ie/mesenger.pt",
+		"/c/users/utente/appdata/local/temp/rsub-zgu6bx/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-awfplp/sockserv.py",
+		"/c/users/utente/appdata/local/temp/rsub-d_binx/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-akmfy4/__init__.py",
+		"/C/cygwin64/home/Utente/.ssh/known_hosts",
+		"/C/Users/Utente/.ssh/known_hosts",
+		"/c/users/utente/appdata/local/temp/rsub-c00k9g/sockserv.",
+		"/c/users/utente/appdata/local/temp/rsub-3_lsk3/utils.php",
+		"/c/users/utente/appdata/local/temp/rsub-us1g95/roiconfig.php",
+		"/c/users/utente/appdata/local/temp/rsub-fp9z14/select_stream.php",
+		"/c/users/utente/appdata/local/temp/rsub-ru3qzl/submit.php",
+		"/c/users/utente/appdata/local/temp/rsub-hi_75c/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-dc_i6g/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-xrp1d9/roiconfig.php",
+		"/c/users/utente/appdata/local/temp/rsub-us_tbe/utils.js",
+		"/c/users/utente/appdata/local/temp/rsub-b09l6o/utils.php",
+		"/c/users/utente/appdata/local/temp/rsub-3fg6cq/update_xml.php",
+		"/c/users/utente/appdata/local/temp/rsub-chwx5a/templates.php",
+		"/c/users/utente/appdata/local/temp/rsub-_82kb6/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-a7kqxq/state_detector.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-pkww3u/alpr_impl.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-ma7_tw/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-i5mx_a/daemon.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-1bc1xe/detectorcpu2.cpp",
+		"/c/users/utente/appdata/local/temp/rsub-dk51h3/__init__.py",
+		"/c/users/utente/appdata/local/temp/rsub-iwl8e3/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-0jfno4/submit.php",
+		"/c/users/utente/appdata/local/temp/rsub-8oy3ux/utils.php",
+		"/c/users/utente/appdata/local/temp/rsub-iqs0y2/submit.php",
+		"/c/users/utente/appdata/local/temp/rsub-pqaokn/submit.php",
+		"/c/users/utente/appdata/local/temp/rsub-605r0k/messenger.py",
+		"/c/users/utente/appdata/local/temp/rsub-mh7wg5/syncapp.py",
+		"/c/users/utente/appdata/local/temp/rsub-z4512x/sockserv.py",
+		"/c/users/utente/appdata/local/temp/rsub-784oo9/__init__.py",
+		"/c/users/utente/appdata/local/temp/rsub-ytfpav/utils.php",
+		"/c/users/utente/appdata/local/temp/rsub-d8e55f/syncapp.py",
+		"/c/users/utente/appdata/local/temp/rsub-f55e56/sockserv.py",
+		"/c/users/utente/appdata/local/temp/rsub-c2_aui/prova.py",
+		"/c/users/utente/appdata/local/temp/rsub-b8srpj/submit.php",
+		"/c/users/utente/appdata/local/temp/rsub-cc9v5v/sockserv.py",
+		"/c/users/utente/appdata/local/temp/rsub-zu2vdl/syncapp.py",
+		"/C/Users/Utente/AppData/Roaming/Sublime Text 3/Local/License.sublime_license",
+		"/c/users/utente/appdata/local/temp/rsub-t7av3r/utils.js",
+		"/c/users/utente/appdata/local/temp/rsub-_z1mr4/provapagin.php",
+		"/c/users/utente/appdata/local/temp/rsub-ky7nen/platelists.php",
+		"/c/users/utente/appdata/local/temp/rsub-g7_7bs/lprconfig.php",
+		"/c/users/utente/appdata/local/temp/rsub-m98a4r/sockserv.py",
+		"/c/users/utente/appdata/local/temp/rsub-sapw8f/messenger.py"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"gettime",
+			"debug_pro",
+			"tdata->debug",
+			"debug_profiling",
+			"fps",
+			"analy",
+			"lpr",
+			"printf",
+			"config\\b",
+			"printf",
+			"region",
+			"recognize\\b",
+			"recognize",
+			"framenum",
+			"delete",
+			"setNumThreads",
+			"alprimpl\\b",
+			"convertRects",
+			"detect\\b",
+			"alpr",
+			"uuid",
+			"recognition",
+			"processframe",
+			"CaptureThreadData",
+			"processframe",
+			"recognition",
+			"processframe",
+			"recogni",
+			"processfra",
+			"recogni",
+			"tdata",
+			"this",
+			"getlatestframe",
+			"getalpr",
+			"imageCollectionThread",
+			"getALPRImages",
+			"getLatestFrame",
+			"getalpr",
+			"ntbs",
+			"no_times",
+			"config",
+			"analysis",
+			"streamreco",
+			"measurefps",
+			"getdirection",
+			"direction",
+			"prepareMessages",
+			"except",
+			"raise",
+			"getdirection",
+			"raise",
+			"sys.exit",
+			"prepareMessages",
+			"getNewMessages",
+			"print",
+			"needsToBeSent",
+			"no_times",
+			"needstobesent",
+			"ntbs",
+			"direction",
+			"sent",
+			"MY_ID",
+			"NOTIFY",
+			"MY_ID",
+			"notifytcp",
+			"MSG_FILE",
+			"getNewMessages",
+			"connect",
+			"arr",
+			"alrpd_file_path",
+			"openalpr_file_path",
+			"needstob",
+			"needsToBeSent",
+			"loadpredefinedroi",
+			"loadImageWithMask",
+			"loadpredefined",
+			"drawimage",
+			"loadpredefined",
+			"masksrc",
+			"loadPredefinedROI",
+			"SKIP_STATE_DETECTION",
+			"statedetector",
+			"queue",
+			"streamreco",
+			"thread",
+			"raise",
+			"sendtcp",
+			"direction",
+			"sent",
+			"sendTCPMessage",
+			"write",
+			"print",
+			"direction",
+			"print",
+			"  ",
+			"     ",
+			"\\s\\s\\s\\s\\s",
+			"\\n",
+			"/",
+			"echo",
+			"unlink",
+			"getdirection",
+			"getdimension",
+			"getcoords",
+			"getalarmstate",
+			"getalarmsta",
+			"getalarmstae",
+			"config_obj",
+			"res",
+			"getalarmstate",
+			"removeOldDataLocal",
+			"config_obj",
+			"timeshift",
+			"timeshi",
+			"ftp_ena",
+			"self",
+			"conf_dict",
+			"messengerlib",
+			"disableScroll",
+			"loadpage",
+			"license provided",
+			"strftime",
+			"getCoords",
+			"sendTCPMessage",
+			"plates_info",
+			"sendTCPMessage",
+			"direction",
+			"sent"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			" ",
+			"\\s",
+			" ",
+			"cuda_cascade->",
+			"\"",
+			"'",
+			"3.0",
+			"\\\"",
+			"\"",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/config/default.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								542,
+								546
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/config/algs/qmix_smac.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/config/algs/qmix.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								262
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/config/envs/sc2.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/config/algs/coma_smac.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/config/algs/vdn_smac.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "configs.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"CalcolaLLS"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
