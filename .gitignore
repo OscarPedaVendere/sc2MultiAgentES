@@ -2,3 +2,10 @@ papers
 papers/*
 results
 results/*
+*.pdf
+*/*.pdf
+venv
+venv/*
+*.txt
+*/*.txt
+!requirements.txt
