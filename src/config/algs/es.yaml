@@ -8,7 +8,7 @@ epsilon_finish: .01
 epsilon_anneal_time: 100000
 
 runner: "parallel"
-batch_size_run: 2 # Number of runners in parallel (population size for ES)
+batch_size_run: 8 # Number of runners in parallel (population size for ES)
 batch_size: 1 # Train after every episode
 buffer_size: 1  # Keep only the last episode
 
