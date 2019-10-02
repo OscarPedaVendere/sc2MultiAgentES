@@ -92,6 +92,11 @@ class ParallelRunner:
         terminated = [False for _ in range(self.batch_size)]
         envs_not_terminated = [b_idx for b_idx, termed in enumerate(terminated) if not termed]
         final_env_infos = []  # may store extra stats like battle won. this is filled in ORDER OF TERMINATION
+        nums = [np.random.normal(self.args.norm_mean, self.args.sigma, self.args.batch_size_run) for _ in range(self.args.batch_size_run)]
+        epsilons = {
+            "epsilons": th.tensor(nums, dtype=th.double).unsqueeze(1)
+        }
+        self.batch.update(epsilons, bs=envs_not_terminated, ts=self.t, mark_filled=False)
 
         while True:
 

@@ -1,4 +1,3 @@
-import numpy as np
 from components.episode_buffer import EpisodeBatch
 import torch as th
 
@@ -17,34 +16,36 @@ class ESLearner:
     def train(self, batch: EpisodeBatch, t_env: int, episode_num: int):
         # Get the relevant quantities
         rewards = batch["reward"][:, :-1]
-        actions = batch["actions"][:, :-1]
         terminated = batch["terminated"][:, :-1].float()
         mask = batch["filled"][:, :-1].float()
         mask[:, 1:] = mask[:, 1:] * (1 - terminated[:, :-1])
-        avail_actions = batch["avail_actions"]
+        extrap = batch["epsilons"][0, 0]
+        epsilons = [i.item() for i in extrap]
 
         # Prepare structures
-        args = self.args
-        n_agents = self.n_agents
+        n = self.args.batch_size_run
         agent = self.mac.agent
 
-        # For each agent prepare noises for weights perturbation
-        sigma_epsilons = []
-        for i in range(0, n_agents):
-            sigma_epsilons.append(np.random.normal(args.norm_mean, args.norm_stdev, self.input_shape))
-        sigma_epsilons *= args.sigma
+        # Compute gradient ascent step
+        reward_epsilons_sum = 0
+        chunk_size = rewards.shape[1] // n
+        for i in range(n):
+            start = chunk_size * i
+            if i == n and rewards.shape[1]-(chunk_size*i) == 1:     # odd reward shape (cannot divide by even n)
+                chunk_size += 1
+            curr_rewards = rewards.narrow(1, start, chunk_size).sum().item()
+            reward_epsilons_sum += curr_rewards * epsilons[i]
 
-        # Add noise to agents' current parameters
-        for i in range(0, n_agents):
-            if self.args.agent == "rnn":
-                index = self.input_shape
-                agent.fc1.weight += sigma_epsilons[i][:index]
-                agent.rnn.weigth += sigma_epsilons[i][index:index + args.rnn_hidden_dim]
-                index += args.rnn_hidden_dim
-                agent.fc2.weight += sigma_epsilons[i][index:]
+        fraction = self.args.alpha * reward_epsilons_sum / (n * self.args.sigma)
 
-        # Compute outputs for each agent
-        agent_outs = self.mac.forward(batch, t=t)
+        # Perform gradient ascent step
+        with th.no_grad():
+            for param in agent.parameters():
+                param.__add__(fraction)
+
+        if t_env - self.log_stats_t >= self.args.learner_log_interval:
+            self.logger.log_stat("reward_mean", rewards.sum().item()/self.args.n_agents)
+            self.log_stats_t = t_env
 
     def _get_input_shape(self, scheme):
         input_shape = scheme["obs"]["vshape"]
@@ -53,3 +54,6 @@ class ESLearner:
         if self.args.obs_agent_id:
             input_shape += self.n_agents
         return input_shape
+
+    def cuda(self):
+        self.mac.cuda()

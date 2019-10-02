@@ -152,6 +152,15 @@
 	"buffers":
 	[
 		{
+			"file": "src/config/envs/sc2.yaml",
+			"settings":
+			{
+				"buffer_size": 765,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/config/default.yaml",
 			"settings":
 			{
@@ -161,26 +170,28 @@
 			}
 		},
 		{
-			"file": "src/config/algs/qmix_smac.yaml",
+			"file": "src/config/algs/es.yaml",
 			"settings":
 			{
-				"buffer_size": 458,
-				"line_ending": "Unix"
+				"buffer_size": 621,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "src/config/algs/qmix.yaml",
 			"settings":
 			{
-				"buffer_size": 532,
+				"buffer_size": 535,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/config/envs/sc2.yaml",
+			"file": "src/config/algs/qmix_smac.yaml",
 			"settings":
 			{
-				"buffer_size": 765,
+				"buffer_size": 458,
 				"line_ending": "Unix"
 			}
 		},
@@ -242,6 +253,9 @@
 	},
 	"file_history":
 	[
+		"/c/users/utente/appdata/local/temp/rsub-s8u10q/utils.js",
+		"/c/users/utente/appdata/local/temp/rsub-vk_wtl/utils.php",
+		"/c/users/utente/appdata/local/temp/rsub-rn82h2/messenger.py",
 		"/C/Users/Utente/Desktop/sample.py",
 		"/c/users/utente/appdata/local/temp/rsub-dv6d9s/daemon.cpp",
 		"/c/users/utente/appdata/local/temp/rsub-spzv44/daemonMT.cpp",
@@ -366,10 +380,7 @@
 		"/C/Users/Utente/AppData/Roaming/Sublime Text 3/Local/License.sublime_license",
 		"/c/users/utente/appdata/local/temp/rsub-t7av3r/utils.js",
 		"/c/users/utente/appdata/local/temp/rsub-_z1mr4/provapagin.php",
-		"/c/users/utente/appdata/local/temp/rsub-ky7nen/platelists.php",
-		"/c/users/utente/appdata/local/temp/rsub-g7_7bs/lprconfig.php",
-		"/c/users/utente/appdata/local/temp/rsub-m98a4r/sockserv.py",
-		"/c/users/utente/appdata/local/temp/rsub-sapw8f/messenger.py"
+		"/c/users/utente/appdata/local/temp/rsub-ky7nen/platelists.php"
 	],
 	"find":
 	{
@@ -387,6 +398,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"state_shape",
+			"recogni",
 			"gettime",
 			"debug_pro",
 			"tdata->debug",
@@ -512,9 +525,7 @@
 			"getCoords",
 			"sendTCPMessage",
 			"plates_info",
-			"sendTCPMessage",
-			"direction",
-			"sent"
+			"sendTCPMessage"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -542,11 +553,41 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "src/config/envs/sc2.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "src/config/default.yaml",
 					"semi_transient": false,
 					"settings":
@@ -558,8 +599,92 @@
 						"selection":
 						[
 							[
-								542,
-								546
+								1100,
+								1100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 20.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/config/algs/es.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								280,
+								280
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/config/algs/qmix.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/config/algs/qmix_smac.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
 							]
 						],
 						"settings":
@@ -574,93 +699,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "src/config/algs/qmix_smac.yaml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 458,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/config/algs/qmix.yaml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 532,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								257,
-								262
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/config/envs/sc2.yaml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 765,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "src/config/algs/coma_smac.yaml",
 					"semi_transient": false,
 					"settings":
@@ -684,11 +723,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "src/config/algs/vdn_smac.yaml",
 					"semi_transient": false,
 					"settings":
@@ -712,7 +751,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

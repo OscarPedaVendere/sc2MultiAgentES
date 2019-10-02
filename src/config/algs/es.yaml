@@ -1,0 +1,25 @@
+# --- ES specific parameters ---
+# --- This config file uses the episodic runner, which is useful for testing locally ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 50000
+
+runner: "parallel"
+batch_size_run: 2 # Number of runners in parallel (population size for ES)
+batch_size: 1 # Train after every episode
+buffer_size: 1  # Keep only the last episode
+
+# use the ESLearner to train
+agent_output_type: "q"
+learner: "es_learner"
+sigma: 0.02
+alpha: 0.3
+norm_mean: 0
+
+# Agent params
+agent: "es_rnn" # ES derived rnn agent
+
+name: "es"
