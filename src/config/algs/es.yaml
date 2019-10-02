@@ -3,9 +3,9 @@
 
 # use epsilon greedy action selector
 action_selector: "epsilon_greedy"
-epsilon_start: 1.0
-epsilon_finish: 0.05
-epsilon_anneal_time: 50000
+epsilon_start: .6
+epsilon_finish: .01
+epsilon_anneal_time: 100000
 
 runner: "parallel"
 batch_size_run: 2 # Number of runners in parallel (population size for ES)
