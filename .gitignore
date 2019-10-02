@@ -11,3 +11,4 @@ venv/*
 !requirements.txt
 __pycache__
 */__pycache__/
+3rdparty/
