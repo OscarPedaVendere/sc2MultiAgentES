@@ -44,7 +44,7 @@ class ESLearner:
                 param.__add__(fraction)
 
         if t_env - self.log_stats_t >= self.args.learner_log_interval:
-            self.logger.log_stat("reward_mean", rewards.sum().item()/self.args.n_agents)
+            self.logger.log_stat("reward_mean", rewards.sum().item()/self.args.n_agents, t_env)
             self.log_stats_t = t_env
 
     def _get_input_shape(self, scheme):
