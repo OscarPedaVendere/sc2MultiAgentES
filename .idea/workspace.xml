@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="244dcf06-a7d5-4678-9755-6c355bc459f8" name="Default Changelist" comment="Integrated ESLearner">
+    <list default="true" id="244dcf06-a7d5-4678-9755-6c355bc459f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/configs.sublime-workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/algs/es.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/algs/es.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/learners/es_learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/learners/es_learner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2788">
-              <caret line="180" selection-start-line="180" selection-end-line="180" />
+            <state relative-caret-position="178">
+              <caret line="168" column="24" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/episode_buffer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+            <state relative-caret-position="1139">
+              <caret line="236" column="35" selection-start-line="236" selection-start-column="25" selection-end-line="236" selection-end-column="35" />
               <folding>
                 <element signature="e#2955#3060#0" />
                 <element signature="e#3096#3332#0" />
@@ -43,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/basic_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="170">
               <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/learners/q_learner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="72" column="50" lean-forward="true" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#270#1184#0" />
@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/agents/es_rnn_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="263">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="35" column="76" lean-forward="true" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+            <state relative-caret-position="289">
+              <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -93,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="183">
+              <caret line="225" selection-start-line="225" selection-end-line="225" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#1847#1930#0" />
@@ -183,63 +183,6 @@
               <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
               <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="envs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="learners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="agents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="critics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mixers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="runners" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570020620462</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Integrated ESLearner">
+      <created>1570108799775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570108799775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -353,17 +303,17 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17544784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28169015" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3531961" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" visible="true" weight="0.2524377" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.2524377" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
@@ -437,6 +387,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/learners/es_learner.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/run.py</url>
+          <line>180</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -604,23 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/smac/env/starcraft2/starcraft2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="452" selection-start-line="452" selection-end-line="452" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/agents/rnn_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sacred/config/captured_function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -648,31 +593,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/run.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/smac/env/starcraft2/starcraft2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="180" selection-start-line="180" selection-end-line="180" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="393">
+          <caret line="221" column="40" lean-forward="true" selection-start-line="221" selection-start-column="40" selection-end-line="221" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/episode_buffer.py">
+    <entry file="file://$PROJECT_DIR$/src/modules/agents/rnn_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+        <state relative-caret-position="204">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <element signature="e#2955#3060#0" />
-            <element signature="e#3096#3332#0" />
-            <element signature="e#4872#6715#0" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/basic_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="170">
           <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
@@ -683,8 +623,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="183">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#1847#1930#0" />
@@ -692,10 +632,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="1376" lean-forward="true" selection-start-line="1376" selection-end-line="1376" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/episode_buffer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="236" column="35" selection-start-line="236" selection-start-column="25" selection-end-line="236" selection-end-column="35" />
+          <folding>
+            <element signature="e#2955#3060#0" />
+            <element signature="e#3096#3332#0" />
+            <element signature="e#4872#6715#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="168" column="24" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/learners/q_learner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+        <state relative-caret-position="238">
+          <caret line="72" column="50" lean-forward="true" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#270#1184#0" />
@@ -705,8 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/agents/es_rnn_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="263">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -715,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="35" column="76" lean-forward="true" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+        <state relative-caret-position="289">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>

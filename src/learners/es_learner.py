@@ -27,15 +27,10 @@ class ESLearner:
         agent = self.mac.agent
 
         # Compute gradient ascent step
+        every_fi = rewards.sum().item() / n
         reward_epsilons_sum = 0
-        chunk_size = rewards.shape[1] // n
         for i in range(n):
-            start = chunk_size * i
-            if i == n and rewards.shape[1]-(chunk_size*i) == 1:     # odd reward shape (cannot divide by even n)
-                chunk_size += 1
-            curr_rewards = rewards.narrow(1, start, chunk_size).sum().item()
-            reward_epsilons_sum += curr_rewards * epsilons[i]
-
+            reward_epsilons_sum += every_fi * epsilons[i]
         fraction = self.args.alpha * reward_epsilons_sum / (n * self.args.sigma)
 
         # Perform gradient ascent step
