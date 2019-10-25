@@ -17,9 +17,8 @@ class EsRNNAgent(nn.Module):
         return self.fc1.weight.new(1, self.args.rnn_hidden_dim).zero_()
 
     def forward(self, inputs, hidden_state, ep_batch):
-        pop_size = ep_batch.batch_size
-        extrap = [i[0] for i in ep_batch["epsilons"]]
-        epsilons = [i.item() for i in extrap[1]]
+        pop_size = self.args.batch_size_run
+        epsilons = ep_batch["epsilons"]
         n_agents = int(inputs.shape[0] / pop_size)
         q = th.tensor([], dtype=inputs.dtype)
         h = th.tensor([], dtype=inputs.dtype)
@@ -28,16 +27,18 @@ class EsRNNAgent(nn.Module):
 
         # Do it for every species of the population
         for i in range(0, pop_size):
+            eps = epsilons[i]
             # Get current input
             start = n_agents * i
             finish = (n_agents * i) + n_agents
             current_input = inputs[start:finish]
 
             # Perturb weights
-            x_i = epsilons[i] * self.args.sigma
             with th.no_grad():
+                j = 0
                 for param in self.parameters():
-                    param.__add__(x_i)
+                    param.__add__(eps[j])
+                    j += 1
 
             # Forward pass
             x = F.relu(self.fc1(current_input))

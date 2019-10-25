@@ -82,6 +82,16 @@ class ParallelRunner:
         self.t = 0
         self.env_steps_this_run = 0
 
+    def prepare_epsilons(self):
+        epsilons = []
+        for i in range(self.args.batch_size_run):
+            epsilons.append([])
+            with th.no_grad():
+                for param in self.mac.agent.parameters():
+                    norm_dist = np.random.normal(self.args.norm_mean, self.args.sigma, param.shape)
+                    epsilons[i].append(th.tensor(norm_dist, dtype=param.dtype))
+        return epsilons
+
     def run(self, test_mode=False):
         self.reset()
 
@@ -92,11 +102,8 @@ class ParallelRunner:
         terminated = [False for _ in range(self.batch_size)]
         envs_not_terminated = [b_idx for b_idx, termed in enumerate(terminated) if not termed]
         final_env_infos = []  # may store extra stats like battle won. this is filled in ORDER OF TERMINATION
-        nums = [np.random.normal(self.args.norm_mean, self.args.sigma, self.args.batch_size_run) for _ in range(self.args.batch_size_run)]
-        epsilons = {
-            "epsilons": th.tensor(nums, dtype=th.double).unsqueeze(1)
-        }
-        self.batch.update(epsilons, bs=envs_not_terminated, ts=self.t, mark_filled=False)
+        nums = self.prepare_epsilons()
+        self.batch.update(nums, epsilons=True)
 
         while True:
 

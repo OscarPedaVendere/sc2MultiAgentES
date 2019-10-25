@@ -19,28 +19,38 @@ class ESLearner:
         terminated = batch["terminated"][:, :-1].float()
         mask = batch["filled"][:, :-1].float()
         mask[:, 1:] = mask[:, 1:] * (1 - terminated[:, :-1])
-        extrap = batch["epsilons"][0, 0]
-        epsilons = [i.item() for i in extrap]
+        epsilons = batch["epsilons"]
 
         # Prepare structures
         n = self.args.batch_size_run
         agent = self.mac.agent
 
-        # Compute gradient ascent step
+        # Compute gradient ascent step:
+        # Compute fraction * sum
         every_fi = rewards.sum().item() / n
-        reward_epsilons_sum = 0
-        for i in range(n):
-            reward_epsilons_sum += every_fi * epsilons[i]
-        fraction = self.args.alpha * reward_epsilons_sum / (n * self.args.sigma)
+        fraction = self.args.alpha / (n * self.args.sigma)
+        for i in epsilons:
+            for j in i:
+                j *= every_fi * fraction
+
+        # Compute sum of each epsilon
+        summed = epsilons[0]
+        for i in range(1, len(epsilons)):
+            k = 0
+            for j in epsilons[i]:
+                summed[k] += j
+                k += 1
 
         # Perform gradient ascent step
         with th.no_grad():
+            j = 0
             for param in agent.parameters():
-                param.__add__(fraction)
+                param.__add__(summed[j])
+                j += 1
 
-        if t_env - self.log_stats_t >= self.args.learner_log_interval:
+        ''' if t_env - self.log_stats_t >= self.args.learner_log_interval:
             self.logger.log_stat("reward_mean", rewards.sum().item()/self.args.n_agents, t_env)
-            self.log_stats_t = t_env
+            self.log_stats_t = t_env '''
 
     def _get_input_shape(self, scheme):
         input_shape = scheme["obs"]["vshape"]

@@ -93,7 +93,6 @@ def run_sequential(args, logger):
         "avail_actions": {"vshape": (env_info["n_actions"],), "group": "agents", "dtype": th.int},
         "reward": {"vshape": (1,)},
         "terminated": {"vshape": (1,), "dtype": th.uint8},
-        "epsilons": {"vshape": args.batch_size_run, "dtype": th.double}
     }
     groups = {
         "agents": args.n_agents
@@ -166,6 +165,7 @@ def run_sequential(args, logger):
 
         # Run for a whole episode at a time
         episode_batch = runner.run(test_mode=False)
+        epsilons = episode_batch.data.transition_data.pop("epsilons", None)
         buffer.insert_episode_batch(episode_batch)
 
         if buffer.can_sample(args.batch_size):
@@ -177,6 +177,8 @@ def run_sequential(args, logger):
 
             if episode_sample.device != args.device:
                 episode_sample.to(args.device)
+
+            episode_sample.update(epsilons, epsilons=True)
 
             learner.train(episode_sample, runner.t_env, episode)
 
