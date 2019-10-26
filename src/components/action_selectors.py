@@ -63,3 +63,19 @@ class EpsilonGreedyActionSelector():
 
 
 REGISTRY["epsilon_greedy"] = EpsilonGreedyActionSelector
+
+
+class GreedyActionSelector():
+    def __init__(self, args):
+        self.args = args
+
+    def select_action(self, agent_inputs, avail_actions, t_env, test_mode=False):
+        # mask actions that are excluded from selection
+        masked_q_values = agent_inputs.clone()
+        masked_q_values[avail_actions == 0.0] = -float("inf")  # should never be selected!
+
+        picked_actions = masked_q_values.max(dim=2)[1]
+        return picked_actions
+
+
+REGISTRY["greedy"] = GreedyActionSelector

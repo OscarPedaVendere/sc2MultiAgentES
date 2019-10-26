@@ -27,11 +27,12 @@ class ESLearner:
 
         # Compute gradient ascent step:
         # Compute fraction * sum
-        every_fi = rewards.sum().item() / n
         fraction = self.args.alpha / (n * self.args.sigma)
-        for i in epsilons:
-            for j in i:
-                j *= every_fi * fraction
+        for i in range(len(epsilons)):
+            curr_eps = epsilons[i]
+            f_i = rewards[i].sum().item()
+            for j in curr_eps:
+                j *= f_i * fraction
 
         # Compute sum of each epsilon
         summed = epsilons[0]
