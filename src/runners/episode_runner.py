@@ -2,6 +2,7 @@ from envs import REGISTRY as env_REGISTRY
 from functools import partial
 from components.episode_buffer import EpisodeBatch
 import numpy as np
+import torch as th
 
 
 class EpisodeRunner:
@@ -45,12 +46,26 @@ class EpisodeRunner:
         self.env.reset()
         self.t = 0
 
+    def prepare_epsilons(self):
+        epsilons = []
+        for i in range(self.args.batch_size_run):
+            epsilons.append([])
+            with th.no_grad():
+                for param in self.mac.agent.parameters():
+                    norm_dist = np.random.normal(self.args.norm_mean, self.args.sigma, param.shape)
+                    epsilons[i].append(th.tensor(norm_dist, dtype=param.dtype))
+        return epsilons
+
     def run(self, test_mode=False):
         self.reset()
 
         terminated = False
         episode_return = 0
         self.mac.init_hidden(batch_size=self.batch_size)
+
+        if self.args.learner == "es_learner":
+            nums = self.prepare_epsilons()
+            self.batch.update(nums, epsilons=True)
 
         while not terminated:
 

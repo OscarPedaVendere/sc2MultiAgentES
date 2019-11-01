@@ -7,10 +7,10 @@ action_selector: "greedy"
 # epsilon_finish: .01
 # epsilon_anneal_time: 100000
 
-runner: "parallel"
-batch_size_run: 2 # Number of runners in parallel (population size for ES)
-batch_size: 2 # Train after every (parallel) episode
-buffer_size: 2  # Keep only the last episode
+runner: "episode"
+batch_size_run: 1 # Number of runners in parallel (population size for ES)
+batch_size: 1 # Train after every (parallel) episode
+buffer_size: 1  # Keep only the last episode
 
 # use the ESLearner to train
 agent_output_type: "q"

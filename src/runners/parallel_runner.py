@@ -102,8 +102,9 @@ class ParallelRunner:
         terminated = [False for _ in range(self.batch_size)]
         envs_not_terminated = [b_idx for b_idx, termed in enumerate(terminated) if not termed]
         final_env_infos = []  # may store extra stats like battle won. this is filled in ORDER OF TERMINATION
-        nums = self.prepare_epsilons()
-        self.batch.update(nums, epsilons=True)
+        if self.args.learner == "es_learner":
+            nums = self.prepare_epsilons()
+            self.batch.update(nums, epsilons=True)
 
         while True:
 
