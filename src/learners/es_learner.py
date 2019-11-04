@@ -46,7 +46,7 @@ class ESLearner:
         with th.no_grad():
             j = 0
             for param in agent.parameters():
-                param.__add__(summed[j])
+                param.data += summed[j]
                 j += 1
 
         ''' if t_env - self.log_stats_t >= self.args.learner_log_interval:
