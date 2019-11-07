@@ -24,6 +24,8 @@ class ESLearner:
         # Prepare structures
         n = self.args.batch_size_run
         agent = self.mac.agent
+        # Reset the agent
+        agent.reset()
 
         # Compute gradient ascent step:
         # Compute fraction * sum
