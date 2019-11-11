@@ -56,9 +56,6 @@ class BasicMAC:
     def init_hidden(self, batch_size):
         self.hidden_states = self.agent.init_hidden().unsqueeze(0).expand(batch_size, self.n_agents, -1)  # bav
 
-    def parameters(self):
-        return self.agent.parameters()
-
     def load_state(self, other_mac):
         self.agent.load_state_dict(other_mac.agent.state_dict())
 

@@ -1,7 +1,7 @@
 REGISTRY = {}
 
 from .rnn_agent import RNNAgent
-from .es_rnn_agent import EsRNNAgent
+from .es_rnn import ESRNNAgent
 
 REGISTRY["rnn"] = RNNAgent
-REGISTRY["es_rnn"] = EsRNNAgent
+REGISTRY["es_rnn"] = ESRNNAgent

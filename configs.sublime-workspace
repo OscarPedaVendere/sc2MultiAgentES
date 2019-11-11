@@ -173,7 +173,7 @@
 			"file": "src/config/algs/es.yaml",
 			"settings":
 			{
-				"buffer_size": 628,
+				"buffer_size": 658,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -562,7 +562,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -592,7 +592,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -608,8 +608,8 @@
 						"selection":
 						[
 							[
-								1100,
-								1100
+								126,
+								91
 							]
 						],
 						"settings":
@@ -629,15 +629,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 628,
+						"buffer_size": 658,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								429,
-								429
+								569,
+								569
 							]
 						],
 						"settings":
@@ -648,7 +648,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{

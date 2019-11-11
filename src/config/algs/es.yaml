@@ -3,20 +3,21 @@
 
 # use epsilon greedy action selector
 action_selector: "greedy"
+mac: "es_mac" # Basic controller
 # epsilon_start: .6
 # epsilon_finish: .01
 # epsilon_anneal_time: 100000
 
-runner: "episode"
-batch_size_run: 1 # Number of runners in parallel (population size for ES)
-batch_size: 1 # Train after every (parallel) episode
-buffer_size: 1  # Keep only the last episode
+runner: "parallel"
+batch_size_run: 2 # Number of runners in parallel (population size for ES)
+batch_size: 2 # Train after every (parallel) episode
+buffer_size: 2  # Keep only the last episode
 
 # use the ESLearner to train
 agent_output_type: "q"
 learner: "es_learner"
-sigma: 0.02
-alpha: 0.3
+sigma: 0.2
+alpha: 0.7
 norm_mean: 0
 
 # Agent params
