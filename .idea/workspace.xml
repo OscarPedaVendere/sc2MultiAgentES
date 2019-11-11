@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="244dcf06-a7d5-4678-9755-6c355bc459f8" name="Default Changelist" comment="ESLearner Reward bugfix">
-      <change afterPath="$PROJECT_DIR$/src/controllers/es_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/agents/es_rnn.py" afterDir="false" />
+    <list default="true" id="244dcf06-a7d5-4678-9755-6c355bc459f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SC2Tesy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SC2Tesy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs.sublime-project" beforeDir="false" afterPath="$PROJECT_DIR$/configs.sublime-project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/configs.sublime-workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install_sc2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install_sc2.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_interactive.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_interactive.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/action_selectors.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/action_selectors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/episode_buffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/episode_buffer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/epsilon_schedules.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/epsilon_schedules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/transforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/transforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/algs/coma_smac.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/algs/coma_smac.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/algs/es.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/algs/es.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/algs/iql_smac.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/algs/iql_smac.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/algs/qmix.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/algs/qmix.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/algs/qmix_smac.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/algs/qmix_smac.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/algs/vdn_smac.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/algs/vdn_smac.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/default.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/default.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/envs/sc2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/envs/sc2.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/basic_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/basic_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/es_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/es_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/envs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/envs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/envs/multiagentenv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/envs/multiagentenv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learners/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/learners/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learners/coma_learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/learners/coma_learner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/learners/es_learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/learners/es_learner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learners/q_learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/learners/q_learner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/agents/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agents/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/agents/es_rnn_agent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agents/es_rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agents/es_rnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agents/rnn_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agents/rnn_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/critics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/critics/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/critics/coma.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/critics/coma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/mixers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mixers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/mixers/qmix.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mixers/qmix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/mixers/vdn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mixers/vdn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/runners/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/runners/episode_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/episode_runner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/runners/parallel_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/parallel_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/dict2namedtuple.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/dict2namedtuple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/rl_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/rl_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/timehelper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/timehelper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorboard.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tensorboard.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="2924">
               <caret line="188" selection-start-line="188" selection-end-line="188" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -62,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/es_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="1156">
               <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
@@ -74,8 +124,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+            <state relative-caret-position="370">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -86,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/agents/es_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="102">
               <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -191,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,7 +289,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570279275355</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added SC2 Multi-instance support&#10;Fixed learner train bug&#10;Implemented ES multi-agent controller&#10;Chenged ES RNN agent">
+      <created>1573496132181</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573496132196</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -370,9 +427,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.2524377" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49841937" visible="true" weight="0.2524377" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5015806" side_tool="true" visible="true" weight="0.2524377" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -441,7 +498,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Integrated ESLearner" />
     <MESSAGE value="ESLearner Reward bugfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="ESLearner Reward bugfix" />
+    <MESSAGE value="Added SC2 Multi-instance support&#10;Fixed learner train bug&#10;Implemented ES multi-agent controller&#10;Chenged ES RNN agent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SC2 Multi-instance support&#10;Fixed learner train bug&#10;Implemented ES multi-agent controller&#10;Chenged ES RNN agent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -685,6 +743,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2924">
+          <caret line="188" selection-start-line="188" selection-end-line="188" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -706,6 +774,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/es_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/agents/es_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4148">
@@ -717,40 +805,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/agents/es_rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="188" selection-start-line="188" selection-end-line="188" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/es_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        <state relative-caret-position="370">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
