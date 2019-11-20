@@ -21,22 +21,28 @@ class ESLearner:
 
         # Prepare structures
         n = self.args.batch_size_run
+        rews = th.sum(rewards, dim=1)
+        adv = (rews - rews.mean()) / rews.std()
 
         # Compute fraction * sum
         fraction = self.args.alpha / (n * self.args.sigma)
         for i in range(len(epsilons)):
             curr_eps = epsilons[i]
-            f_i = rewards[i].sum().item()
+            f_i = adv[i].item()
             for j in curr_eps:
-                j *= f_i * fraction
+                j *= f_i
 
         # Compute sum of each epsilon
         summed = epsilons[0]
-        for i in range(1, len(epsilons)):
+        for i in range(len(epsilons)):
             k = 0
             for j in epsilons[i]:
                 summed[k] += j
                 k += 1
+
+        # Multiply times fraction
+        for e in summed:
+            e *= fraction
 
         # TODO: self.mac must be of type es_mac. Insert implementation error if not provided
 
