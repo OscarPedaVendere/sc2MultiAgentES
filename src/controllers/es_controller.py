@@ -26,13 +26,11 @@ class EsMAC:
         return chosen_actions
 
     def gradient_ascent_step(self, summed):
-        for t in summed:
-            t.to("cpu")
         # Perform gradient ascent step
         with th.no_grad():
             j = 0
             for param in self.new_agent.parameters():
-                param.data += summed[j]
+                param.data += summed[j].to("cpu")
                 j += 1
 
         # Set new agents net to updated one
