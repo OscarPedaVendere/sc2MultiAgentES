@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="244dcf06-a7d5-4678-9755-6c355bc459f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/experimenti686.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/configs.sublime-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/runners/parallel_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/parallel_runner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
@@ -93,6 +92,15 @@
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#1847#1930#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experimenti686.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="76" lean-forward="true" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -165,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/modules/agents/es_rnn.py" />
         <option value="$PROJECT_DIR$/src/learners/es_learner.py" />
         <option value="$PROJECT_DIR$/src/runners/parallel_runner.py" />
+        <option value="$PROJECT_DIR$/experimenti686.sh" />
       </list>
     </option>
   </component>
@@ -192,37 +201,6 @@
               <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="learners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="agents" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -233,6 +211,11 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main.py" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Utente\Desktop\SC2Tesy" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -354,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574255687172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed use_cuda when preparing epsilons">
+      <created>1574430390152</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574430390152</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -370,7 +360,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17544784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17544784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -382,7 +372,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49736565" weight="0.2524377" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.3336945" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.3336945" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -453,7 +443,8 @@
     <MESSAGE value="ESLearner Reward bugfix" />
     <MESSAGE value="Added SC2 Multi-instance support&#10;Fixed learner train bug&#10;Implemented ES multi-agent controller&#10;Chenged ES RNN agent" />
     <MESSAGE value="Added fitness shaping&#10;Fixed weight calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fitness shaping&#10;Fixed weight calculation" />
+    <MESSAGE value="Fixed use_cuda when preparing epsilons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed use_cuda when preparing epsilons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -780,6 +771,13 @@
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#1847#1930#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimenti686.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="76" lean-forward="true" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
         </state>
       </provider>
     </entry>
