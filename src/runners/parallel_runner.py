@@ -84,12 +84,13 @@ class ParallelRunner:
 
     def prepare_epsilons(self):
         epsilons = []
+        device = "gpu" if self.args.use_cuda else "cpu"
         for i in range(self.args.batch_size_run):
             epsilons.append([])
             with th.no_grad():
                 for param in self.mac.new_agent.parameters():
                     norm_dist = np.random.normal(self.args.norm_mean, self.args.sigma, param.shape)
-                    epsilons[i].append(th.tensor(norm_dist, dtype=param.dtype))
+                    epsilons[i].append(th.tensor(norm_dist, dtype=param.dtype, device=device))
         return epsilons
 
     def run(self, test_mode=False):

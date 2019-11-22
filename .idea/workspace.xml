@@ -4,7 +4,7 @@
     <list default="true" id="244dcf06-a7d5-4678-9755-6c355bc459f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/configs.sublime-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/learners/es_learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/learners/es_learner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/runners/parallel_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/parallel_runner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/logging.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
+            <state relative-caret-position="153">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
@@ -38,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/episode_buffer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
+            <state relative-caret-position="1768">
               <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
               <folding>
                 <element signature="e#2955#3060#0" />
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/es_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="260">
+              <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="408">
+              <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -84,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4148">
-              <caret line="249" column="21" selection-start-line="249" selection-start-column="16" selection-end-line="249" selection-end-column="21" />
+            <state relative-caret-position="362">
+              <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#1847#1930#0" />
@@ -108,8 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hasattr</find>
-      <find>mixer</find>
       <find>registry</find>
       <find>forward</find>
       <find>agent_output_type</find>
@@ -138,6 +136,8 @@
       <find>agents</find>
       <find>reset</find>
       <find>reward_scale</find>
+      <find>alter</find>
+      <find>prepare_epsilons</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,13 +158,13 @@
         <option value="$PROJECT_DIR$/src/runners/episode_runner.py" />
         <option value="$PROJECT_DIR$/src/controllers/basic_controller.py" />
         <option value="$PROJECT_DIR$/src/controllers/__init__.py" />
-        <option value="$PROJECT_DIR$/src/runners/parallel_runner.py" />
         <option value="$PROJECT_DIR$/src/modules/agents/es_rnn_agent.py" />
         <option value="$PROJECT_DIR$/src/modules/agents/rnn_agent.py" />
         <option value="$PROJECT_DIR$/src/modules/agents/__init__.py" />
         <option value="$PROJECT_DIR$/src/controllers/es_controller.py" />
         <option value="$PROJECT_DIR$/src/modules/agents/es_rnn.py" />
         <option value="$PROJECT_DIR$/src/learners/es_learner.py" />
+        <option value="$PROJECT_DIR$/src/runners/parallel_runner.py" />
       </list>
     </option>
   </component>
@@ -347,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573496539757</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added fitness shaping&#10;Fixed weight calculation">
+      <created>1574255687172</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574255687172</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -375,7 +382,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49736565" weight="0.2524377" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.3336945" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.3336945" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -445,7 +452,8 @@
     <MESSAGE value="Integrated ESLearner" />
     <MESSAGE value="ESLearner Reward bugfix" />
     <MESSAGE value="Added SC2 Multi-instance support&#10;Fixed learner train bug&#10;Implemented ES multi-agent controller&#10;Chenged ES RNN agent" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SC2 Multi-instance support&#10;Fixed learner train bug&#10;Implemented ES multi-agent controller&#10;Chenged ES RNN agent" />
+    <MESSAGE value="Added fitness shaping&#10;Fixed weight calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added fitness shaping&#10;Fixed weight calculation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -696,33 +704,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/logging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/episode_buffer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
-          <folding>
-            <element signature="e#2955#3060#0" />
-            <element signature="e#3096#3332#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/es_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,40 +741,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/es_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/episode_buffer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+          <folding>
+            <element signature="e#2955#3060#0" />
+            <element signature="e#3096#3332#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4148">
-          <caret line="249" column="21" selection-start-line="249" selection-start-column="16" selection-end-line="249" selection-end-column="21" />
+        <state relative-caret-position="362">
+          <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#1847#1930#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="182" selection-start-line="182" selection-end-line="182" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/logging.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
