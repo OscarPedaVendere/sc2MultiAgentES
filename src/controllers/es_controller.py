@@ -26,7 +26,8 @@ class EsMAC:
         return chosen_actions
 
     def gradient_ascent_step(self, summed):
-        summed.to("cpu")
+        for t in summed:
+            t.to("cpu")
         # Perform gradient ascent step
         with th.no_grad():
             j = 0
