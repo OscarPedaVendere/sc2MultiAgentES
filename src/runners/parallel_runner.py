@@ -84,7 +84,7 @@ class ParallelRunner:
 
     def prepare_epsilons(self):
         epsilons = []
-        device = "gpu" if self.args.use_cuda else "cpu"
+        device = "cuda" if self.args.use_cuda else "cpu"
         for i in range(self.args.batch_size_run):
             epsilons.append([])
             with th.no_grad():
