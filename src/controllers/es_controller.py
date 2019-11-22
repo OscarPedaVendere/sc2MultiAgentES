@@ -41,7 +41,8 @@ class EsMAC:
         # TODO: self.agents must be of type es_rnn. Insert implementation error if not provided
         epsilons = ep_batch["epsilons"]
         agent_inputs = self._build_inputs(ep_batch, t)
-        agent_outs = th.tensor([], dtype=agent_inputs[0].dtype)
+        device = "cuda" if self.args.use_cuda else "cpu"
+        agent_outs = th.tensor([], dtype=agent_inputs[0].dtype, device = device)
 
         for i in range(self.args.batch_size_run):
             # Do it for every species of the population
