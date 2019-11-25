@@ -30,7 +30,7 @@ class EsMAC:
         with th.no_grad():
             j = 0
             for param in self.new_agent.parameters():
-                param.data += summed[j].to("cpu")
+                param.data += summed[j]
                 j += 1
 
         # Set new agents net to updated one
@@ -42,7 +42,7 @@ class EsMAC:
         epsilons = ep_batch["epsilons"]
         agent_inputs = self._build_inputs(ep_batch, t)
         device = "cuda" if self.args.use_cuda else "cpu"
-        agent_outs = th.tensor([], dtype=agent_inputs[0].dtype, device = device)
+        agent_outs = th.tensor([], dtype=agent_inputs[0].dtype, device=device)
 
         for i in range(self.args.batch_size_run):
             # Do it for every species of the population
@@ -77,6 +77,7 @@ class EsMAC:
     def cuda(self):
         for agent in self.agents:
             agent.cuda()
+        self.new_agent.cuda()
 
     def save_models(self, path):
         th.save(self.new_agent.state_dict(), "{}/agent.th".format(path))
