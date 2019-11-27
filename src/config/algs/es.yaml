@@ -12,12 +12,14 @@ runner: "parallel"
 batch_size_run: 2 # Number of runners in parallel (population size for ES)
 batch_size: 2 # Train after every (parallel) episode
 buffer_size: 2  # Keep only the last episode
+checkpoint_path: "../results/models/es__2019-11-27_00-08-39" # Load a checkpoint from this path
+load_step: 701205 # Load model trained on this many timesteps (0 if choose max possible)
 
 # use the ESLearner to train
 agent_output_type: "q"
 learner: "es_learner"
-sigma: 0.2
-alpha: 0.7
+alpha: 0.6
+sigma: 4
 norm_mean: 0
 
 # Agent params

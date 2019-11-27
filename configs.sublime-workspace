@@ -155,7 +155,7 @@
 			"file": "src/config/envs/sc2.yaml",
 			"settings":
 			{
-				"buffer_size": 764,
+				"buffer_size": 763,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -173,7 +173,7 @@
 			"file": "src/config/algs/es.yaml",
 			"settings":
 			{
-				"buffer_size": 661,
+				"buffer_size": 845,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -262,6 +262,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Utente/Desktop/models/es__2019-11-25_23-41-24/agents.txt",
 		"/C/Users/Utente/Downloads/htmlSvgDownloader.html",
 		"/C/Users/Utente/Downloads/battle_won_mean.svg",
 		"/C/Users/Utente/Desktop/ringzer0.py",
@@ -388,8 +389,7 @@
 		"/c/users/utente/appdata/local/temp/rsub-c2_aui/prova.py",
 		"/c/users/utente/appdata/local/temp/rsub-b8srpj/submit.php",
 		"/c/users/utente/appdata/local/temp/rsub-cc9v5v/sockserv.py",
-		"/c/users/utente/appdata/local/temp/rsub-zu2vdl/syncapp.py",
-		"/C/Users/Utente/AppData/Roaming/Sublime Text 3/Local/License.sublime_license"
+		"/c/users/utente/appdata/local/temp/rsub-zu2vdl/syncapp.py"
 	],
 	"find":
 	{
@@ -562,7 +562,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -571,15 +571,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 764,
+						"buffer_size": 763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								639,
-								644
+								633,
+								633
 							]
 						],
 						"settings":
@@ -608,8 +608,36 @@
 						"selection":
 						[
 							[
-								723,
-								731
+								1276,
+								1193
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/config/algs/es.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								483,
+								483
 							]
 						],
 						"settings":
@@ -621,34 +649,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/config/algs/es.yaml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 661,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								660,
-								660
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				},
 				{

@@ -85,6 +85,7 @@ class EsMAC:
     def load_models(self, path):
         for agent in self.agents:
             agent.load_state_dict(th.load("{}/agent.th".format(path), map_location=lambda storage, loc: storage))
+        self.new_agent.load_state_dict(th.load("{}/agent.th".format(path), map_location=lambda storage, loc: storage))
 
     def _build_inputs(self, batch, t):
         # Assumes homogenous agents with flat observations.

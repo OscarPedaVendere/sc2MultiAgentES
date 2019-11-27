@@ -45,6 +45,11 @@ class ESLearner:
             e *= fraction
 
         # TODO: self.mac must be of type es_mac. Insert implementation error if not provided
+        for e in epsilons:
+            for j in e:
+                if False not in th.isnan(j):
+                    self.logger.console_logger.warning("Skipping NaN update (after frac comp) for network at iteration {}".format(t_env))
+                    return
 
         # Perform a gradient ascent step
         self.mac.gradient_ascent_step(summed)
@@ -62,3 +67,9 @@ class ESLearner:
 
     def cuda(self):
         self.mac.cuda()
+
+    def save_models(self, path):
+        self.mac.save_models(path)
+
+    def load_models(self, path):
+        self.mac.load_models(path)

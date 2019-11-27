@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="244dcf06-a7d5-4678-9755-6c355bc459f8" name="Default Changelist" comment="">
+    <list default="true" id="244dcf06-a7d5-4678-9755-6c355bc459f8" name="Default Changelist" comment="Fixed cuda() method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/configs.sublime-workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/algs/es.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/algs/es.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/envs/sc2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/envs/sc2.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/es_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/es_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learners/es_learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/learners/es_learner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/runners/parallel_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/parallel_runner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,19 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/logging.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="1479">
+              <caret line="87" column="29" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="29" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -35,23 +31,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/episode_buffer.py">
+        <entry file="file://$PROJECT_DIR$/src/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="256">
+              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding>
-                <element signature="e#2955#3060#0" />
-                <element signature="e#3096#3332#0" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/es_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="153">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -60,10 +55,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/debug_models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+            <state relative-caret-position="287">
+              <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -74,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/basic_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+            <state relative-caret-position="533">
+              <caret line="68" column="105" selection-start-line="68" selection-start-column="105" selection-end-line="68" selection-end-column="105" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
                 <element signature="e#1420#2575#0" />
@@ -87,11 +94,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/learners/q_learner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+            <state relative-caret-position="375">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#270#1184#0" />
               </folding>
             </state>
           </provider>
@@ -106,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1853">
-              <caret line="114" column="43" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="43" />
+            <state relative-caret-position="232">
+              <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#1847#1930#0" />
@@ -130,18 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>transition_data</find>
-      <find>preprocess</find>
-      <find>new_batch</find>
-      <find>step</find>
-      <find>reward</find>
-      <find>insert</find>
-      <find>args</find>
-      <find>websocket</find>
-      <find>mac</find>
-      <find>epsilons</find>
-      <find>max_t_filled</find>
-      <find>mask</find>
       <find>n_agents</find>
       <find>alter_network</find>
       <find>set_state</find>
@@ -152,7 +146,6 @@
       <find>reset</find>
       <find>reward_scale</find>
       <find>alter</find>
-      <find>prepare_epsilons</find>
       <find>gradient</find>
       <find>gpu</find>
       <find>summed</find>
@@ -160,6 +153,19 @@
       <find>new_agent</find>
       <find>to</find>
       <find>cuda</find>
+      <find>load_models</find>
+      <find>mac_REGISTRY</find>
+      <find>agent_REGISTRY</find>
+      <find>storage</find>
+      <find>load_mode</find>
+      <find>prepare_epsilons</find>
+      <find>prepare</find>
+      <find>train</find>
+      <find>learner</find>
+      <find>nan</find>
+      <find>warning</find>
+      <find>log</find>
+      <find>args_sanity_check</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,7 +181,6 @@
         <option value="$PROJECT_DIR$/results/sacred/_sources/run_3d041e9dfb93478d76bc56d4c3315843.py" />
         <option value="$PROJECT_DIR$/src/learners/q_learner.py" />
         <option value="$PROJECT_DIR$/src/components/episode_buffer.py" />
-        <option value="$PROJECT_DIR$/src/run.py" />
         <option value="$PROJECT_DIR$/src/components/action_selectors.py" />
         <option value="$PROJECT_DIR$/src/runners/episode_runner.py" />
         <option value="$PROJECT_DIR$/src/controllers/basic_controller.py" />
@@ -184,10 +189,13 @@
         <option value="$PROJECT_DIR$/src/modules/agents/rnn_agent.py" />
         <option value="$PROJECT_DIR$/src/modules/agents/__init__.py" />
         <option value="$PROJECT_DIR$/src/modules/agents/es_rnn.py" />
-        <option value="$PROJECT_DIR$/src/learners/es_learner.py" />
         <option value="$PROJECT_DIR$/experimenti686.sh" />
-        <option value="$PROJECT_DIR$/src/runners/parallel_runner.py" />
+        <option value="$PROJECT_DIR$/../models/es__2019-11-25_23-41-24/cose.py" />
+        <option value="$PROJECT_DIR$/src/debug_models.py" />
         <option value="$PROJECT_DIR$/src/controllers/es_controller.py" />
+        <option value="$PROJECT_DIR$/src/run.py" />
+        <option value="$PROJECT_DIR$/src/learners/es_learner.py" />
+        <option value="$PROJECT_DIR$/src/runners/parallel_runner.py" />
       </list>
     </option>
   </component>
@@ -214,31 +222,6 @@
               <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
               <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SC2Tesy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SC2Tesy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="agents" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -269,6 +252,48 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="cose" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SC2Tesy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../models/es__2019-11-25_23-41-24" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../models/es__2019-11-25_23-41-24/cose.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="debug_models" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SC2Tesy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/debug_models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SC2Tesy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -282,7 +307,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
-      <option name="PARAMETERS" value="--config=es --env-config=sc2 with env_args.map_name=2s3z" />
+      <option name="PARAMETERS" value="--config=es --env-config=sc2 with env_args.map_name=3m" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -314,7 +339,15 @@
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.tensorboard.main" />
+      <item itemvalue="Python.cose" />
+      <item itemvalue="Python.debug_models" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.debug_models" />
+        <item itemvalue="Python.cose" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -425,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574433307143</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed use_cuda when preparing epsilons">
+      <created>1574678065259</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1574678065259</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -446,15 +486,16 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.3336945" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49736565" visible="true" weight="0.40195015" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49736565" weight="0.2524377" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.3336945" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50263435" side_tool="true" weight="0.40195015" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -525,10 +566,18 @@
     <MESSAGE value="Added SC2 Multi-instance support&#10;Fixed learner train bug&#10;Implemented ES multi-agent controller&#10;Chenged ES RNN agent" />
     <MESSAGE value="Added fitness shaping&#10;Fixed weight calculation" />
     <MESSAGE value="Fixed use_cuda when preparing epsilons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed use_cuda when preparing epsilons" />
+    <MESSAGE value="Fixed cuda() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed cuda() method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../models/es__2019-11-25_23-41-24/cose.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -537,6 +586,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="e" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1142242563/builtins.py">
@@ -682,23 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/agents/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#15#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sacred/config/captured_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/torch/nn/modules/module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -731,16 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="209" lean-forward="true" selection-start-line="209" selection-end-line="209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="182" selection-start-line="182" selection-end-line="182" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,16 +805,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
+    <entry file="file://$PROJECT_DIR$/src/modules/agents/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#15#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker/build.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../models/es__2019-11-25_23-41-24/cose.py" />
     <entry file="file://$PROJECT_DIR$/src/components/episode_buffer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -799,49 +837,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/agents/es_rnn.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sacred/config/captured_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        <state relative-caret-position="302">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
+    <entry file="file://$PROJECT_DIR$/src/debug_models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="114" column="43" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="43" />
+        <state relative-caret-position="544">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#1847#1930#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/learners/q_learner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#270#1184#0" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/basic_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+        <state relative-caret-position="533">
+          <caret line="68" column="105" selection-start-line="68" selection-start-column="105" selection-end-line="68" selection-end-column="105" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
             <element signature="e#1420#2575#0" />
@@ -849,12 +865,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/agents/es_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/learners/q_learner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="87" column="29" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/es_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="153">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/learners/es_learner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runners/parallel_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#1847#1930#0" />
           </folding>
         </state>
       </provider>

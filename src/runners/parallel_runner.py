@@ -39,6 +39,7 @@ class ParallelRunner:
         self.test_stats = {}
 
         self.log_train_stats_t = -100000
+        self.ndist = th.distributions.Normal(th.Tensor([float(args.norm_mean)]), th.Tensor([float(args.sigma ** 2)]))
 
     def setup(self, scheme, groups, preprocess, mac):
         self.new_batch = partial(EpisodeBatch, scheme, groups, self.batch_size, self.episode_limit + 1,
@@ -84,13 +85,15 @@ class ParallelRunner:
 
     def prepare_epsilons(self):
         epsilons = []
-        device = "cuda" if self.args.use_cuda else "cpu"
         for i in range(self.args.batch_size_run):
             epsilons.append([])
             with th.no_grad():
                 for param in self.mac.new_agent.parameters():
-                    norm_dist = np.random.normal(self.args.norm_mean, self.args.sigma, param.shape)
-                    epsilons[i].append(th.tensor(norm_dist, dtype=param.dtype, device=device))
+                    k = self.ndist.sample(param.size())
+                    k = k.squeeze(-1)
+                    k.to(param.device)
+                    epsilons[i].append(k)
+
         return epsilons
 
     def run(self, test_mode=False):
@@ -123,10 +126,10 @@ class ParallelRunner:
             # Send actions to each env
             action_idx = 0
             for idx, parent_conn in enumerate(self.parent_conns):
-                if idx in envs_not_terminated: # We produced actions for this env
-                    if not terminated[idx]: # Only send the actions to the env if it hasn't terminated
+                if idx in envs_not_terminated:  # We produced actions for this env
+                    if not terminated[idx]:  # Only send the actions to the env if it hasn't terminated
                         parent_conn.send(("step", cpu_actions[action_idx]))
-                    action_idx += 1 # actions is not a list over every env
+                    action_idx += 1  # actions is not a list over every env
 
             # Update envs_not_terminated
             envs_not_terminated = [b_idx for b_idx, termed in enumerate(terminated) if not termed]
