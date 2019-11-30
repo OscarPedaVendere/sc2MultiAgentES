@@ -4,16 +4,19 @@
 # use epsilon greedy action selector
 action_selector: "greedy"
 mac: "es_mac" # Basic controller
-# epsilon_start: .6
-# epsilon_finish: .01
-# epsilon_anneal_time: 100000
+weight_decay: True    # wether or not to use weight decay in the learning
+decay_amount: .01 # amt% to decay at each timestep. Value should be between 0 and 1
+decay_start: 0  # Start weight decay after this many timestep
+decay_limit: 50000   # Stop weight decay after this timestep: 0 for no limit
 
 runner: "parallel"
 batch_size_run: 2 # Number of runners in parallel (population size for ES)
 batch_size: 2 # Train after every (parallel) episode
 buffer_size: 2  # Keep only the last episode
-checkpoint_path: "../results/models/es__2019-11-27_00-08-39" # Load a checkpoint from this path
-load_step: 701205 # Load model trained on this many timesteps (0 if choose max possible)
+
+# Load already trained model
+# checkpoint_path: "results/models/es__2019-11-27_00-08-39" # Load a checkpoint from this path
+# load_step: 701205 # Load model trained on this many timesteps (0 if choose max possible)
 
 # use the ESLearner to train
 agent_output_type: "q"

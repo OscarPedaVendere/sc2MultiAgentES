@@ -91,7 +91,6 @@ class ParallelRunner:
                 for param in self.mac.new_agent.parameters():
                     k = self.ndist.sample(param.size())
                     k = k.squeeze(-1)
-                    k.to(param.device)
                     epsilons[i].append(k)
 
         return epsilons

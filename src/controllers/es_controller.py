@@ -30,7 +30,7 @@ class EsMAC:
         with th.no_grad():
             j = 0
             for param in self.new_agent.parameters():
-                param.data += summed[j]
+                param.data += summed[j].to(param.device)
                 j += 1
 
         # Set new agents net to updated one
@@ -63,8 +63,14 @@ class EsMAC:
         with th.no_grad():
             j = 0
             for param in self.agents[i].parameters():
-                param.data += eps[j]
+                param.data += eps[j].to(param.device)
                 j += 1
+
+    def weight_decay(self, amt):
+        perc = 1 - amt
+        with th.no_grad():
+            for param in self.new_agent.parameters():
+                param *= perc
 
     def reset(self):
         for agent in self.agents:
