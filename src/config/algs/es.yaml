@@ -5,14 +5,14 @@
 action_selector: "greedy"
 mac: "es_mac" # Basic controller
 weight_decay: True    # wether or not to use weight decay in the learning
-decay_amount: .01 # amt% to decay at each timestep. Value should be between 0 and 1
-decay_start: 0  # Start weight decay after this many timestep
-decay_limit: 50000   # Stop weight decay after this timestep: 0 for no limit
+decay_amount: .15 # amt% to decay at each timestep. Value should be between 0 and 1
+decay_start: 2000000  # Start weight decay after this many timestep
+decay_limit: 0   # Stop weight decay after this timestep: 0 for no limit
 
 runner: "parallel"
-batch_size_run: 2 # Number of runners in parallel (population size for ES)
-batch_size: 2 # Train after every (parallel) episode
-buffer_size: 2  # Keep only the last episode
+batch_size_run: 8 # Number of runners in parallel (population size for ES)
+batch_size: 8 # Train after every (parallel) episode
+buffer_size: 8  # Keep only the last episode
 
 # Load already trained model
 # checkpoint_path: "results/models/es__2019-11-27_00-08-39" # Load a checkpoint from this path

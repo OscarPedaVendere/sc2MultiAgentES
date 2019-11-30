@@ -1,0 +1,1 @@
+#!/bin/bash                                                                                                             source ../venvi686/bin/activate                                                                                         python3 -m tensorboard.main --logdir=results --host=141.250.25.71 

@@ -40,6 +40,7 @@ class ESLearner:
                 summed[k] += j
                 k += 1
 
+        # TODO: Fix this implementation/calculation error
         # Multiply times fraction
         for e in summed:
             e *= fraction
@@ -58,7 +59,14 @@ class ESLearner:
         self.mac.reset()
 
         if self.args.weight_decay:
-            if t_env in range(self.args.decay_start, self.args.decay_limit):
+            should_decay = False
+            if self.args.decay_limit == 0:  # No checks for upper limit
+                if t_env >= self.args.decay_start:
+                    should_decay = True
+            else:   # Check for upper limit
+                if t_env in range(self.args.decay_start, self.args.decay_limit):
+                    should_decay = True
+            if should_decay:
                 self.mac.weight_decay(self.args.decay_amount)
 
     def _get_input_shape(self, scheme):
