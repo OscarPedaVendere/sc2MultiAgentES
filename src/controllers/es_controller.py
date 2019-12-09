@@ -66,11 +66,16 @@ class EsMAC:
                 param.data += eps[j].to(param.device)
                 j += 1
 
-    def weight_decay(self, amt):
+    def weight_decay(self, amt, t_env):
         perc = 1 - amt
         with th.no_grad():
             for param in self.new_agent.parameters():
-                param *= perc
+                temp = param.data
+                temp *= perc
+                if False not in th.isnan(temp):
+                    self.logger.console_logger.warning("Skipping NaN update for network decay at iteration {}.".format(t_env))
+                else:
+                    param *= perc
 
     def reset(self):
         for agent in self.agents:

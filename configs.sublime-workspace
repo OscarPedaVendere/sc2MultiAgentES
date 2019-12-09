@@ -173,7 +173,7 @@
 			"file": "src/config/algs/es.yaml",
 			"settings":
 			{
-				"buffer_size": 991,
+				"buffer_size": 1101,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -629,15 +629,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 991,
+						"buffer_size": 1101,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								329,
-								329
+								711,
+								711
 							]
 						],
 						"settings":

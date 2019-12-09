@@ -25,7 +25,8 @@ class ESLearner:
         adv = (rews - rews.mean()) / rews.std()
 
         # Compute fraction * sum
-        fraction = self.args.alpha / (n * self.args.sigma)
+        ex = epsilons[0]
+        fraction = th.Tensor([self.args.alpha / (n * self.args.sigma)], device=ex[0].device)
         for i in range(len(epsilons)):
             curr_eps = epsilons[i]
             f_i = adv[i].item()
@@ -43,7 +44,7 @@ class ESLearner:
         # TODO: Fix this implementation/calculation error
         # Multiply times fraction
         for e in summed:
-            e *= fraction
+            e *= fraction.item()
 
         # TODO: self.mac must be of type es_mac. Insert implementation error if not provided
         for e in epsilons:
@@ -58,6 +59,7 @@ class ESLearner:
         # Reset the controller for the next episode
         self.mac.reset()
 
+        '''
         if self.args.weight_decay:
             should_decay = False
             if self.args.decay_limit == 0:  # No checks for upper limit
@@ -67,7 +69,8 @@ class ESLearner:
                 if t_env in range(self.args.decay_start, self.args.decay_limit):
                     should_decay = True
             if should_decay:
-                self.mac.weight_decay(self.args.decay_amount)
+                self.mac.weight_decay(self.args.decay_amount, t_env)
+        '''
 
     def _get_input_shape(self, scheme):
         input_shape = scheme["obs"]["vshape"]
