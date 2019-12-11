@@ -58,6 +58,7 @@ class ESLearner:
         # Reset the controller for the next episode
         self.mac.reset()
 
+        '''
         if self.args.weight_decay:
             should_decay = False
             if self.args.decay_limit == 0:  # No checks for upper limit
@@ -68,6 +69,7 @@ class ESLearner:
                     should_decay = True
             if should_decay:
                 self.mac.weight_decay(self.args.decay_amount, t_env, episode_num)
+        '''
 
     def _get_input_shape(self, scheme):
         input_shape = scheme["obs"]["vshape"]
