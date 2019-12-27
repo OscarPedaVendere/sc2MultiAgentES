@@ -74,7 +74,7 @@ class EsMAC:
             for param in self.new_agent.parameters():
                 param.data *= perc
                 if False not in th.isnan(param):
-                    self.logger.console_logger.warning("Skipping NaN update for decay at episode {}.".format(t_env, episode_num))
+                    self.logger.console_logger.warning("Skipping NaN update for decay at episode {}.".format(episode_num))
                     should_backup = True
                     break
                 else:

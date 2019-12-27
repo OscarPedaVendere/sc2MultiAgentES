@@ -23,42 +23,43 @@ class ESLearner:
         n = self.args.batch_size_run
         rews = th.sum(rewards, dim=1)
         adv = (rews - rews.mean()) / rews.std()
+        skip_update = False not in (adv == 0)
 
-        # Compute fraction * sum
-        fraction = self.args.alpha / (n * self.args.sigma)
-        for i in range(len(epsilons)):
-            curr_eps = epsilons[i]
-            f_i = adv[i].item()
-            for j in curr_eps:
-                j *= f_i
+        if not skip_update:
+            # Compute fraction * sum
+            fraction = self.args.alpha / (n * self.args.sigma)
+            for i in range(len(epsilons)):
+                curr_eps = epsilons[i]
+                f_i = adv[i].item() if not th.isnan(adv[i]).item() else 0
+                for j in curr_eps:
+                    j *= f_i
 
-        # Compute sum of each epsilon
-        summed = epsilons[0]
-        for i in range(len(epsilons)):
-            k = 0
-            for j in epsilons[i]:
-                summed[k] += j
-                k += 1
+            # Compute sum of each epsilon
+            summed = epsilons[0]
+            for i in range(len(epsilons)):
+                k = 0
+                for j in epsilons[i]:
+                    summed[k] += j
+                    k += 1
 
-        # TODO: Fix this implementation/calculation error
-        # Multiply times fraction
-        for e in summed:
-            e *= fraction
+            # TODO: Fix this implementation/calculation error
+            # Multiply times fraction
+            for e in summed:
+                e *= fraction
 
-        # TODO: self.mac must be of type es_mac. Insert implementation error if not provided
-        for e in epsilons:
-            for j in e:
-                if False not in th.isnan(j):
-                    self.logger.console_logger.warning("Skipping NaN update for network at episode {}".format(episode_num))
-                    return
+            # TODO: self.mac must be of type es_mac. Insert implementation error if not provided
+            for e in epsilons:
+                for j in e:
+                    if False not in th.isnan(j):
+                        self.logger.console_logger.warning("Skipping NaN update for network at episode {}".format(episode_num))
+                        return
 
-        # Perform a gradient ascent step
-        self.mac.gradient_ascent_step(summed)
+            # Perform a gradient ascent step
+            self.mac.gradient_ascent_step(summed)
 
-        # Reset the controller for the next episode
-        self.mac.reset()
+            # Reset the controller for the next episode
+            self.mac.reset()
 
-        '''
         if self.args.weight_decay:
             should_decay = False
             if self.args.decay_limit == 0:  # No checks for upper limit
@@ -69,7 +70,6 @@ class ESLearner:
                     should_decay = True
             if should_decay:
                 self.mac.weight_decay(self.args.decay_amount, t_env, episode_num)
-        '''
 
     def _get_input_shape(self, scheme):
         input_shape = scheme["obs"]["vshape"]
